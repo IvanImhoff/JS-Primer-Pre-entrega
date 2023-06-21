@@ -130,7 +130,7 @@ function saludo(){
 }
 
 function verCatalogo(){
-    let comprar = (prompt(`Desea ver nuestro catalogo de productos? Responder por si o no.`))
+    let comprar = (prompt(`Desea ver nuestro catalogo de productos? Responder por si o no.`).toLocaleLowerCase())
     while (comprar != "si" && comprar != "no"){
         comprar = prompt(`Error, responda por si o por no.`)
     }
